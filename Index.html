@@ -1,0 +1,47 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Eindopdracht W2 Filmzoeker</title>
+    <script defer src="db.js"></script>
+    <script defer src="script.js"></script>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <h1>Filmzoeker</h1>
+        </header>
+        <nav id="filters">
+            <form name="form1">
+                <group class="inline-radio">
+                    <div><input id="Newest" type="radio" value="Newest Movies" name="title"><label>Newest
+                            Movies</label>
+                    </div>
+                    <div><input id="Avengers" type="radio" value="Avengers" name="title"><label>Avengers</label>
+                    </div>
+                    <div><input id="X-Men" type="radio" value="X-Men" name="title"><label>X-Men</label></div>
+                    <div><input id="Princess" type="radio" value="Princess" name="title"><label>Princess</label>
+                    </div>
+                    <div><input id="Batman" type="radio" value="Batman" name="title"><label>Batman</label></div>
+                    <div><input name="name" placeholder="Search" type="text" id="Search"></label><input name="title"
+                            type="button" value="Submit">
+                    </div>
+                </group>
+            </form>
+
+
+        </nav>
+        <main>
+            <ul id="movie-list" class="grid-container">
+
+            </ul>
+        </main>
+        <footer></footer>
+    </div>
+
+</body>
+
+</html>
